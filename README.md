@@ -34,8 +34,9 @@ git clone https://github.com/your-username/get_next_line.git
 cd get_next_line
 ````
 ### 2. Compile:
+BUFFER_SIZE can be any integer you choose, for this example we will use '42'
 ````bash
-make
+gcc -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
 ````
 ### Example:
 ````c
